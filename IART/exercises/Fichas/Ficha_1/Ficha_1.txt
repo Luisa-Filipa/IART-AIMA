@@ -1,0 +1,82 @@
+1)
+    1.1)
+        1) Sim
+        2) Sim
+        3) Sim
+        4) Não
+        5) Não
+        6) Sim
+        7) Não
+        8) Não
+
+    1.2)
+        4) Demasiada imprevisibilidade no ambiente e escassa capacidade de absorver informação sensorial
+        5) Ter piada é subjetivo tendo em conta que há diferentes sentidos de humor
+        7) Pode dar aconselhamento técnico, contudo a área legal é muito subjetivo a interpretação e não é polarizada (preto e branco)
+        8) Muito sujetivo aos ideais de cada um
+
+2)
+    R: 2.3. Um agente inteligente
+
+3)
+    3.1) Não, completamente observável
+    3.2) Não, estratégico
+    3.3) Não, discreto
+    3.4) Sim
+
+4)
+    4.1) Sim
+    4.2) Sim
+    4.3) Não, discreto
+    4.4) Sim
+
+5)
+    5.1) Sim
+    5.2) Sim
+    5.3) Sim
+    5.4) Sim
+
+6)
+    6.1)
+
+    if (T1 >= 22 && T1 <=24){       // Se temperatura dentro da sala dentro da margem, fecha/desliga tudo
+        [NAQ, NAC, NAJ]
+    }else if (T1 < 22 && T1 >=20) { // Se temperatura dentro da sala for inferior mas dentro do limite, verifica temp. exterior
+        if (T2 > T1){
+            [NAQ, NAC, AJ]          // Se esterior acima de sala usa janela
+        }else {
+            [AQ, NAC, NAJ]          // Se esterior abaixo de sala usa aquecedor
+        }
+   }else if (T1 < 20 ){             // Se temperatura dentro da fora do limite, usa aquecedor
+        [AQ, NAC, NAJ]
+   }else if (T1 > 24 && T1 <=26) {  // Se temperatura dentro da sala for superior mas dentro do limite, verifica temp. exterior
+        if (T2 < T1){
+            [NAQ, NAC, AJ]          // Se exterior abaixo de sala usa janela
+        }else {
+            [NAQ, AC, NAJ]          // Se exterior acima de sala usa janela
+        }
+   }else {
+        [NAQ, AC, NAJ]              // Se temperatura abaixo de sala usa ar condicionado
+   }
+
+6.2) Ver ficha1_ex6.py
+
+6.3) Verificar presença do utilizador além de tentar determinar quando o utilizador chegaria ao local para controlar a temperatura
+
+7)
+    Se não vê obstáculo, vai em frente
+    Se vê obstáculo, vira
+    Se for contra obstáculo, ricichete
+    Comportamento estranho: virar permanentenente andando em círculo
+
+8)
+
+9)
+
+10)
+
+11)
+
+12)
+
+13) Ver ficha1_ex13.exe
